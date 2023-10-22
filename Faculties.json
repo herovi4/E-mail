@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Факультет инженерии",
+    "requiredSubjects": [
+      {
+        "name": "Математика",
+        "minScore": 70
+      },
+      {
+        "name": "Физика",
+        "minScore": 75
+      },
+      {
+        "name": "Русский язык",
+        "minScore": 65
+      },
+      {
+        "name": "Информатика",
+        "minScore": 80
+      }
+    ],
+    "passingScore": 320
+  },
+  {
+    "name": "Факультет гуманитарных наук",
+    "requiredSubjects": [
+      {
+        "name": "Русский язык",
+        "minScore": 70
+      },
+      {
+        "name": "История",
+        "minScore": 65
+      },
+      {
+        "name": "Литература",
+        "minScore": 70
+      },
+      {
+        "name": "Английский язык",
+        "minScore": 75
+      }
+    ],
+    "passingScore": 310
+  }
+]

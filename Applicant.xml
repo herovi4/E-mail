@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicants>
+    <applicant>
+        <name>Иванов Иван Иванович</name>
+        <exam subject="Математика" score="90" />
+        <exam subject="Физика" score="85" />
+        <exam subject="Русский язык" score="70" />
+        <exam subject="Информатика" score="80" />
+    </applicant>
+    <applicant>
+        <name>Губошлёпов Пётр Вениаминович</name>
+        <exam subject = "Русский язык" score="54" />
+        <exam subject = "Обществознание" score="45" />
+        <exam subject = "Английский язык" score="25" />
+        <exam subject = "Литература" score="54" />
+    </applicant>
+</applicants>
