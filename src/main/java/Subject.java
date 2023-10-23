@@ -1,12 +1,11 @@
 import javax.xml.bind.annotation.*;
 
-@XmlRootElement
+
 public class Subject {
     private String name;
     private Integer score;
     private Integer minScore;
 
-    @XmlElement
     public String getName() {
         return name;
     }
@@ -14,7 +13,6 @@ public class Subject {
     public void setName(String name) {
         this.name = name;
     }
-    @XmlElement
     public int getScore() {
         return score;
     }

@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class LetterGenerator {
+    public static final  String OUT_PATH = "src\\main\\resources\\out\\";
     public static void generateAdmissionLetters(List<Faculty> faculties, List<Applicant> applicants)
     {
         for (Applicant abiturient : applicants) {
@@ -46,10 +47,9 @@ public class LetterGenerator {
 
             // Сохранение текста письма в файл
             try {
-
                 String txtFileName = abiturient.getName().replaceAll(" ", "_") + ".txt";
                 String pdfFileName = abiturient.getName().replaceAll(" ", "_") + ".pdf";
-                BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
+                BufferedWriter writer = new BufferedWriter(new FileWriter(OUT_PATH + txtFileName));
                 PDDocument document = new PDDocument();
                 PDPage page = new PDPage(PDRectangle.A4);
                 document.addPage(page);
@@ -66,7 +66,7 @@ public class LetterGenerator {
                 contentStream.endText();
                 contentStream.close();
 
-                document.save(pdfFileName); // Сохранение в PDF-файл
+                document.save(OUT_PATH +pdfFileName); // Сохранение в PDF-файл
                 document.close();
                 writer.write(emailText.toString());
                 writer.close();

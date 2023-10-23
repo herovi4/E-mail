@@ -12,19 +12,15 @@ public class ReaderFromFile {
     public static List<Applicant> ReadApplicantFromXML(String XMLName) {
         List<Applicant> applicants = new ArrayList<>();
         try {
-            // Создаем фабрику для создания парсера
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
 
-            // Считываем XML-документ
             Document document = builder.parse(new File(XMLName));
 
             Element root = document.getDocumentElement();
 
-            // Получаем список всех элементов <applicant>
             NodeList applicantList = root.getElementsByTagName("applicant");
 
-            // Перебираем абитуриентов
             for (int i = 0; i < applicantList.getLength(); i++) {
                 Element applicant = (Element) applicantList.item(i);
                 Applicant applicant1 = new Applicant();

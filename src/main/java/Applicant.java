@@ -5,7 +5,6 @@ import java.util.List;
 public class Applicant {
     private String name;
     private List<Subject> subjects;
-    @XmlElement
     public String getName() {
         return name;
     }
